@@ -46,10 +46,7 @@ public class ArrayResizer
     {
       if (isNonZeroRow(array2D, r) == true) 
       {
-        for (int c = 0; c < array2D[0].length; c++) 
-        {
-          answer[answerRow][c] = array2D[r][c];
-        }
+        answer[answerRow] = array2D[r];
         answerRow++;
       }
     }
